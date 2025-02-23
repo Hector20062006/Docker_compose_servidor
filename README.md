@@ -1,2 +1,2 @@
 # Dockers
- Un repositorio donde subo docker compose
+ Un repositorio donde subo dockers-compose que uso en mi servidor de mi casa.
