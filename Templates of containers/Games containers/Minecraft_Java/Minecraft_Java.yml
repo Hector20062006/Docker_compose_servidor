@@ -2,16 +2,16 @@ version: "3.8"
 services:
   minecraft:
     image: itzg/minecraft-server:java8-multiarch
-    container_name: minecraft-server
+    container_name: minecraft-server  # Name of the container
     ports:
-      - "25565:25565"
+      - "25565:25565"  # Ports
     environment:
-      EULA: "TRUE"
-      TYPE: "FORGE"
-      VERSION: "1.12.2"
-      MEMORY: "4G"
-      ONLINE_MODE: "FALSE"
+      EULA: "TRUE" # Accept the EULA
+      TYPE: "FORGE" # Type of minecraft
+      VERSION: "1.12.2"  # Minecraft version
+      MEMORY: "4G"       # Maximum memory used
+      ONLINE_MODE: "FALSE" # Allow users who have hacked minecraft
     volumes:
-      - ./data:/data
-      - ./mods:/data/mods
+      - ./data:/data       # Server data volume
+      - ./mods:/data/mods  # Server data mods
     restart: always
